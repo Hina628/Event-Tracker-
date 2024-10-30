@@ -1,0 +1,96 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+     color: #324961; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(21, 31, 49);
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 3.8rem;
+    color: #2980b9; 
+    text-decoration: underline;
+    padding-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 2.5rem;
+    color: #0f8f44; 
+    text-decoration: underline;
+    padding-bottom: 1rem;
+
+}
+
+
+.event-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+
+.event-box {
+    background-color: #2980b9; 
+    color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.event-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.event-box p, .event-box div, .event-box input, .event-box button {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+input, button, div {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #27ae60; 
+    color: white;
+    cursor: pointer;
+}
+
+#dropArea, #touchArea, #mouseArea {
+    padding: 20px;
+    background-color: #f39c12; 
+    text-align: center;
+    cursor: pointer;
+}
